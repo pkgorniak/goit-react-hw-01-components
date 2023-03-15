@@ -1,0 +1,32 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 320px;
+  height: 70px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px 0px rgba(142, 146, 148, 0.4);
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.status {
+  width: 8px;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.statusOnline {
+  composes: status;
+  background-color: green;
+}
+
+.statusOffline {
+  composes: status;
+  background-color: red;
+}
